@@ -17,3 +17,5 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=origins
 )
+
+app.include_router(api.router)
