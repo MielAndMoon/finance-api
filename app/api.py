@@ -3,14 +3,14 @@ from sqlalchemy.orm import Session
 
 from app import service
 from app.database import get_db
-from .schemas import TransactionModel
+from .schemas import TransactionBase, TransactionModel
 
 
 router = APIRouter()
 
 
 @router.post('/transactions', response_model=TransactionModel)
-async def create_transaction(transaction: TransactionModel, db: Session = Depends(get_db)):
+async def create_transaction(transaction: TransactionBase, db: Session = Depends(get_db)):
     return service.insert_transaction(db, transaction)
 
 
