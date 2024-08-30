@@ -9,6 +9,9 @@ This project is a RESTful API for managing financial transactions, built with Fa
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
+  - [API Documentation](#api-documentation)
+  - [Project Structure](#project-structure)
+  - [API Endpoints](#api-endpoints)
 
 ## Features
 
